@@ -324,6 +324,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     NotchBarKiller
 
+# Perf
+ PRODUCT_PACKAGES += \
+    vendor.qti.hardware.perf@2.2.vendor
+
+ PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/perf/perfboostsconfig.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/perf/perfboostsconfig.xml
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power@1.3-service.lenovo_msmnile-libperfmgr
